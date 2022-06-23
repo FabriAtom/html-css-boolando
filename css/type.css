@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+}
+
+.main-header{
+    background-color: #ff6900;
+    padding: 10px 0;
+    display: flex;
+    color: white;
+
+}
+.main-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .container{
+    max-width: 1400px;
+    margin: 0 auto;
+ }
+
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 -20px;
+    row-gap: 40px;
+ }
+
+.col-4{
+    width: calc(100% / 3);
+    padding: 0 20px;
+}
+
+.img{
+    max-width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.nav-menu{
+    font-size: bold;
+}
+
+
+.nav-menu{
+    gap: 15px;
+}
+
+.favorite{
+    top: 30px;
+    display: block;
+    background-color: white;
+    height: 50px;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor:pointer;
+}
+
+.favorite:hover{
+    color: red;
+}
+
+.favorite,
+.product-meta{
+    position: absolute;
+}
+
+.product-meta{
+    left: 0;
+    bottom: 40px;
+    border: 1px solid white;
+    display: flex;
+    gap: 10px;
+}
+
+.sezione{
+    padding: 0 15px;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.sezione-sconti{
+    background-color: red;
+}
+
+.sezione-tag{
+    background-color: #008000;
+}
+
+.product-brand{
+    font-weight: 300;
+    font-size: 15px;
+}
+.product-title{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.prezzo-full{
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+.prezzo-sale{
+    font-weight: bold;
+    color: red;
+}
+
+.product-immagine{
+    width: 100%;
+}
+
+.card-thumbnail{
+    position: relative;
+}
+
+.product-immagine-zoom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.favorite,
+.product-meta{
+    position: absolute;
+}
+.card:hover .product-immagine-zoom{
+    z-index: 1;
+    opacity: 1;
+}
